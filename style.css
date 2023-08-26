@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  overflow-x: hidden;
+}
 body {
   font-family: "syne", sans-serif;
   min-height: 100vh;
