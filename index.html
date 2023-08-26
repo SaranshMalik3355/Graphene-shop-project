@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FrontEnd Assesment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&family=Prompt:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <!-- ============= Header ============= -->
+
+        <header class="content" id="header">
+            <div class="social_links">
+                <div class="icon">
+                    <box-icon type='solid' name='truck'></box-icon>
+                    <a href="#">Free Delivery</a>
+                </div>
+                <div class="vl"></div>
+                <a href="">Return Policy</a>
+            </div>
+
+            <div class="menu_1">
+                <div class="menu_item_1">
+                    <a href="#" class="menu_link_1">Login</a>
+                </div>
+                <div class="menu_item_1 f">
+                    <a href="#" class="menu_link_1 ">Follow US</a>
+                </div>
+                <div class="menu_item_1">
+                    <a href="#" class="menu_link_1"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>
+                <div class="menu_item_1">
+                    <a href="#" class="menu_link_1"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <div class="menu_item_1">
+                    <a href="#" class="menu_link_1"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+                <div class="menu_item_1">
+                    <a href="#" class="menu_link_1"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ============= HOME SECTION ============= -->
+        <section id="home" class="navbar">
+            <div class="links">
+                <a href="#header" class="logo">
+                    <h1>ShopKart</h1>
+                </a>
+
+                <ul class="shop">
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">WISHLIST(0)</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">BUY(0)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar_links">
+                <div class="inside_logo">
+                    <a href="#header">
+                        ShopKart
+                    </a>
+                </div>
+                <ul class="menu">
+                    <ion-icon name="close-outline" class="close_icon"></ion-icon>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link ">HOME</a>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">ABOUT</a>
+                    </li>
+                    <li class="menu_item">
+                        <a onclick="show_hide()" href="#" class="menu_link">OUR PRODUCTS</a>
+                        <div class="dropdown">
+                            <!-- dropdown list items will show when we click the drop button -->
+                            <div id="list-items">
+                                <a href="#"> Tutorials </a>
+                                <a href="#"> About Us </a>
+                                <a href="#"> Contact Us</a>
+                                <a href="#"> Career </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">CONTACT US</a>
+                    </li>
+
+                </ul>
+                <ion-icon style="color: white;" name="menu-outline" class="toggle_icon"></ion-icon>
+            </div>
+
+            <div class="look">
+                <div class="heading">
+                    <div class="one">Fresh</div>
+                    <div class="two">2022</div>
+                    <div class="three">Look</div>
+                </div>
+                <div class="parent">
+                    <div class="boxs_1"></div>
+                    <div class="images boxs_2">
+                        <img class="img_1" src="./images/Star 3.png" alt="">
+                        <img class="img_2" src="./images/jessica-radanavong-IchPBHFD0pw-unsplash.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="lst">
+                <a class="link" href="">See more
+                    <ion-icon name="chevron-up-outline"></ion-icon></a>
+
+            </div>
+
+        </section>
+
+        <!-- ==============Products============ -->
+        <section class="products_section">
+            <div>
+
+                <h1 class="products_title">
+                    New products
+                    <hr>
+                </h1>
+
+            </div>
+
+            <div class="products_container grid">
+                <div class="products_tabs">
+                    <ul style="text-decoration: none;">
+                        <li>
+                            <a href="#">Apparel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="current">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">Best sellers</a>
+                        </li>
+                        <li>
+                            <a href="#">50% off</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Swiper -->
+
+                <div class="swiper mySwiper ">
+
+                    <div class="navigators">
+                        <div class="rwd-btn swiper-button-prev-uniq"><img src="./images/Arrow 4.svg" alt="Arrow" />
+                        </div>
+                        <div class="fwd-btn swiper-button-next-uniq"><img src="./images/Arrow 3.svg" alt="Arrow" />
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img">
+                                <img src="./images/img_1.jpeg" alt="">
+                            </div>
+                            <div class="contents">
+                                <h3>FLORIDA JACKET</h3>
+                                <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                                    byinjected
+                                    humor,orrandomised</p>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+
+                                <img src="./images/img_2.jpeg" alt="">
+                            </div>
+                            <div class="contents">
+                                <h3>FLORIDA JACKET</h3>
+                                <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                                    byinjected
+                                    humor,orrandomised</p>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+
+                                <img src="./images/img_3.jpeg" alt="">
+                            </div>
+                            <div class="contents">
+                                <h3>FLORIDA JACKET</h3>
+                                <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                                    byinjected
+                                    humor,orrandomised</p>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img">
+
+                                <img src="./images/img_4.jpeg" alt="">
+                            </div>
+                            <div class="contents">
+                                <h3>FLORIDA JACKET</h3>
+                                <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                                    byinjected humor,orrandomised</p>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= Footer ============= -->
+        <footer id="contact">
+            <div class="footer_bg ">
+                <div class="footer_container container">
+                    <div class="main_footer">
+                        <!-- <img src="./images/18591063.jpg" alt="Footer-image"> -->
+                        <div class="form_area">
+                            <div class="subtitles">
+                                <h3>NewsLetter</h3>
+                                <p>Get News about articles and updates in your inbox</p>
+                            </div>
+                            <div class="footer_form">
+                                <form id="myForm" action="">
+                                    <input type="text" id="fname" name="fname" placeholder="Name" required>
+                                    <hr>
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                    <hr>
+                                    <input type="text" id="message" name="message" placeholder="Message" required>
+                                    <hr>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="footer_text">
+                            <h1>Get <p>in touch</p>
+                            </h1>
+                            <div class="button">
+                                <a id="submitButton" href="" class="btn">Send</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_copy">Copyright 2022. All right reserved by SG </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- Swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Boxicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Ion Icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

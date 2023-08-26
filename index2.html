@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 70%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 350px !important;
+            text-align: center;
+            font-size: 28px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide .contents {
+            padding: 8px;
+            width: 310px;
+
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        .swiper-slide .contents h3 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .swiper-slide .contents .para {
+            color: #16161580;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 310px;
+            height: 322px;
+            object-fit: cover;
+        }
+
+        .navigators {
+            display: flex;
+            padding: 0 10px;
+            justify-content: end;
+        }
+
+        .navigators>.rwd-btn,
+        .fwd-btn {
+            font-size: 50px;
+            padding: 0 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper mySwiper ">
+
+        <div class="navigators">
+            <div class="rwd-btn swiper-button-prev-uniq"><img src="./images/Arrow 4.svg" alt="Arrow" />
+            </div>
+            <div class="fwd-btn swiper-button-next-uniq"><img src="./images/Arrow 3.svg" alt="Arrow" />
+            </div>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="./images/img_1.jpeg" alt="">
+                </div>
+                <div class="contents">
+                    <h3>FLORIDA JACKET</h3>
+                    <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                        byinjected
+                        humor,orrandomised</p>
+                    <p class="price">$100</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img">
+
+                    <img src="./images/img_2.jpeg" alt="">
+                </div>
+                <div class="contents">
+                    <h3>FLORIDA JACKET</h3>
+                    <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                        byinjected
+                        humor,orrandomised</p>
+                    <p class="price">$100</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img">
+
+                    <img src="./images/img_3.jpeg" alt="">
+                </div>
+                <div class="contents">
+                    <h3>FLORIDA JACKET</h3>
+                    <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                        byinjected
+                        humor,orrandomised</p>
+                    <p class="price">$100</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img">
+
+                    <img src="./images/img_4.jpeg" alt="">
+                </div>
+                <div class="contents">
+                    <h3>FLORIDA JACKET</h3>
+                    <p class="para">Suffered alteration in some form, bysuffalterattion in some forme,
+                        byinjected humor,orrandomised</p>
+                    <p class="price">$100</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        let swiper = new Swiper(".swiper", {
+            effect: "slide",
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                400: {
+                    slidesPerView: 1,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next-uniq",
+                prevEl: ".swiper-button-prev-uniq",
+                clickable: true,
+            },
+        });
+
+    </script>
+</body>
+
+</html>
