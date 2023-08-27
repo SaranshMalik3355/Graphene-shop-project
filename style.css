@@ -499,7 +499,7 @@ hr {
 }
 
 .swiper-slide {
-  width: 350px !important;
+  width: 320px !important;
   text-align: center;
   font-size: 28px;
   background: #fff;
@@ -598,6 +598,9 @@ hr {
     width: 300px;
   }
 
+  .swiper-slide {
+    width: 250px !important;
+  }
   .swiper-slide img {
     /* display: block; */
     text-align: center;

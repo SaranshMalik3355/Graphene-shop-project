@@ -39,12 +39,24 @@ let swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   breakpoints: {
-    768: {
+    "@0.00": {
+      slidesPerView: 1,
+    },
+    "@0.75": {
       slidesPerView: 2,
     },
-    400: {
-      slidesPerView: 2,
+    "@1.00": {
+      slidesPerView: 3,
     },
+    // "@1.50": {
+    //   slidesPerView: 4,
+    // },
+    // 768: {
+    //   slidesPerView: 2,
+    // },
+    // 400: {
+    //   slidesPerView: 2,
+    // },
   },
   navigation: {
     nextEl: ".swiper-button-next-uniq",
